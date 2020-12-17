@@ -3,12 +3,12 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: nginx-deploy
-  namespace: default
+  namespace: flux
 spec:
   releaseName: nginx-deploy
   chart:
     git: git@github.com::naresh240/helm-chart-nginx
-    ref: main
-    path: nginx
+    ref: master
+    path: charts/nginx
   values:
     replicaCount: 1
