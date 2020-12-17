@@ -10,8 +10,5 @@ spec:
     git: git@github.com:Naresh240/helm-chart-nginx.git
     ref: master
     path: nginx
-    git: git@github.com:Naresh240/springboot-helm.git
-    ref: master
-    path: charts
   values:
     replicaCount: 2
