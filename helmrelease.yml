@@ -8,7 +8,7 @@ spec:
   releaseName: nginx-deploy
   chart:
     git: git@github.com::naresh240/helm-chart-nginx
-    ref: master
+    ref: main
     path: nginx
   values:
     replicaCount: 1
