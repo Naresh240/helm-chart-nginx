@@ -1,0 +1,15 @@
+  
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: springboot-deploy
+  namespace: default
+spec:
+  releaseName: springboot-deploy
+  chart:
+    git: git@github.com:Naresh240/springboot-helm.git
+    ref: master
+    path: charts
+  values:
+    replicaCount: 2
