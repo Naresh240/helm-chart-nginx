@@ -9,6 +9,6 @@ spec:
   chart:
     git: git@github.com:Naresh240/helm-chart-nginx.git
     ref: master
-    path: nginx
+    path: charts/nginx
   values:
     replicaCount: 1
